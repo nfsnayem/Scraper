@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Scraper",
+  "description": "A Chromium-based extension developed by Nayem, that automates data loading into the APS Product plugin, ensuring faster and more efficient product management.",
+  "version": "1.2",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "host_permissions": [
+  "<all_urls>"
+]
+}
