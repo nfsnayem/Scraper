@@ -4,9 +4,5 @@ node_modules/
 # Environment variables
 .env
 
-# Temp folder (keep folder, ignore contents)
-temp/*
-!temp/.gitkeep
-
 # OS files
 .DS_Store
