@@ -1,19 +1,33 @@
 {
   "manifest_version": 3,
-  "name": "Scraper",
+  "name": "APS Scraper",
   "description": "A Chromium-based extension developed by Nixgle that automates data loading into the APS Product plugin, ensuring faster and more efficient product management.",
   "version": "1.2",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "APS Scraper"
+  },
   "permissions": ["activeTab"],
+  "host_permissions": [
+    "*://nixgle.com/*",
+    "http://localhost:3030/*"
+  ],
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "*://nixgle.com/*"
       ],
       "js": ["content.js"],
       "css": ["content.css"]
     }
-  ],
-  "host_permissions": [
-  "<all_urls>"
-]
+  ]
 }

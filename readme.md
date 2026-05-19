@@ -18,5 +18,5 @@
 to check API run
 
 ```bash
-localhost:3080?url=<modiledokandeviceUrl>
+localhost:3030?url=<mobiledokandeviceUrl>
 ```
